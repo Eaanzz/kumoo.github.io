@@ -1,0 +1,115 @@
+.jumbotron {
+  background-color: #f7f7f7;
+  padding: 0 10px;
+  position: relative;
+}
+
+.container-jumbotron {
+  max-width: 1200px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.container-jumbotron img {
+  width: 1830px;
+  height: 400px;
+  margin-top: 30px;
+  border-radius: 8px;
+}
+
+/* all */
+section.all {
+  background-color: #f4f4f4; /* Light background color */
+  padding: 30px 0; /* Space around the section */
+  border: 1px solid rgba(184, 184, 184, 0.185);
+}
+
+.container-all {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.all-kiri {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.all-kiri a {
+  text-decoration: none;
+  color: #333;
+  font-size: 16px;
+  padding: 10px 20px;
+  transition: all 0.3s ease;
+}
+
+.all-kiri a:hover {
+  font-weight: bold;
+}
+
+/* product card */
+.all-product {
+  padding: 50px 5%;
+  background-color: #f9f9f9;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.container-card-product {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+  width: 100%;
+  max-width: 1600px;
+}
+
+.card-product {
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card-product:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+.card-product a img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+  border-bottom: 1px solid #eaeaea;
+}
+
+.card-product a img:hover {
+  transform: scale(1.05);
+}
+
+.card-product span {
+  display: block;
+  margin-top: 12px;
+  font-size: 16px;
+  color: #333;
+}
+
+.card-product .diskon {
+  text-decoration: line-through;
+  color: #bbb;
+  font-size: 14px;
+  margin-top: 8px;
+}
+
+.card-product .diskon2 {
+  font-size: 18px;
+  font-weight: bold;
+  color: #e63946;
+  margin-top: 5px;
+}

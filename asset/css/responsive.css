@@ -1,0 +1,177 @@
+/* Responsif untuk layar 1024px ke bawah */
+@media (max-width: 1024px) {
+  /* Produk */
+  .wanita-kiri,
+  .pria-kanan {
+    max-width: 100%;
+    flex: 1;
+    margin-bottom: 20px; /* Memberikan ruang antar card */
+  }
+
+  .wanita-kanan,
+  .pria-kiri {
+    display: grid; /* Pastikan grid tetap digunakan */
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px; /* Mengatur jarak antar kolom */
+  }
+
+  .card a img {
+    height: auto;
+    width: 100%;
+    object-fit: cover; /* Gambar tetap proporsional */
+  }
+
+  /* Produk Wanita & Pria */
+  .container-wanita,
+  .container-pria,
+  .container-tengah {
+    padding: 30px;
+  }
+
+  .card {
+    width: 100%;
+    padding: 20px; /* Tambahkan padding agar card lebih rapi */
+    box-sizing: border-box;
+    border-radius: 8px; /* Membuat card lebih halus */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Memberikan bayangan lembut */
+    transition: transform 0.3s ease; /* Efek transisi saat hover */
+  }
+
+  .card:hover {
+    transform: translateY(-10px); /* Efek hover */
+  }
+
+  .card span {
+    font-size: 18px;
+    margin-top: 10px;
+  }
+
+  .card .diskon,
+  .card .diskon2 {
+    font-size: 20px;
+  }
+}
+
+/* Responsif untuk layar 768px ke bawah */
+@media (max-width: 768px) {
+  /* Menu Navigasi */
+  .nav-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: #fff;
+    width: 100%;
+    flex-direction: column;
+    box-shadow: 0px 8px 10px rgba(0, 0, 0, 0.1);
+    animation: slideDown 0.3s ease-in-out;
+  }
+
+  .nav-menu.active {
+    display: flex;
+  }
+
+  .nav-menu ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .nav-menu li {
+    margin: 10px 0;
+  }
+
+  /* Produk Wanita & Pria */
+  .container-wanita,
+  .container-pria,
+  .container-tengah {
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .wanita-kiri,
+  .pria-kanan {
+    display: block;
+    margin-bottom: 20px;
+  }
+
+  .card a img {
+    width: 100%;
+    height: auto;
+  }
+
+  .card span {
+    font-size: 16px;
+  }
+
+  .card .diskon,
+  .card .diskon2 {
+    font-size: 18px;
+  }
+}
+
+/* Responsif untuk layar 480px ke bawah */
+@media (max-width: 480px) {
+  /* Menu Navigasi */
+  .nav-logo img {
+    max-width: 80px;
+  }
+
+  .nav-menu li a {
+    font-size: 14px;
+  }
+
+  /* Produk */
+  .wanita-kiri span,
+  .pria-kanan span {
+    font-size: 16px;
+  }
+
+  .card span {
+    font-size: 12px;
+  }
+
+  .card .diskon,
+  .card .diskon2 {
+    font-size: 14px;
+  }
+
+  .card a img {
+    height: 180px;
+    width: 100%;
+  }
+
+  /* Produk Wanita & Pria */
+  .container-wanita,
+  .container-pria,
+  .container-tengah {
+    flex-direction: column;
+    justify-content: center;
+    padding: 10px;
+  }
+
+  /* Semua elemen kiri */
+  .all-kiri {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .all-kiri a {
+    white-space: nowrap;
+    width: 100%;
+    text-align: left;
+    padding: 15px;
+    font-size: 14px;
+  }
+}
+
+/* Animation */
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

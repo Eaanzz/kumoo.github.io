@@ -1,0 +1,376 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  font-family: "Jost", sans-serif;
+  text-decoration: none;
+  list-style: none;
+}
+
+/* start nav */
+nav.nav {
+  position: fixed;
+  width: 100vw;
+  top: 0;
+  right: 0;
+  z-index: 1000;
+  display: flex;
+  background-color: #fff;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 10%;
+  transition: all 1s ease-in-out;
+}
+
+.nav-logo img {
+  max-width: 120px;
+  height: auto;
+}
+
+.nav-menu ul {
+  display: flex;
+}
+
+.nav-menu li a {
+  padding: 10px 20px;
+  color: #2c222c;
+  font-size: 16px;
+  text-transform: capitalize;
+  font-weight: 400;
+  transition: all 0.42s ease;
+  cursor: pointer;
+  z-index: 10001;
+}
+
+.nav-icon a,
+#menu-icon {
+  margin: 5px;
+  padding: 5px;
+  font-size: 23px;
+  color: #2c222c;
+  font-weight: 500;
+}
+
+.nav-icon a,
+#menu-icon {
+  margin: 5px;
+  padding: 5px;
+  font-size: 25px;
+  color: #2c222c;
+  font-weight: 500;
+}
+
+.nav-menu ul li a:hover,
+.nav-icon a i:hover,
+#menu-icon:hover {
+  text-decoration: underline;
+}
+
+#menu-icon {
+  display: none;
+  cursor: pointer;
+}
+
+/* end nav */
+section.utama {
+  padding: 5% 10%;
+  height: 100vh;
+  background-image: url(/asset/image/banner-3.png);
+  background-size: cover;
+  background-position: center;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  align-items: center;
+  padding-top: 80px;
+}
+
+.teks-kiri h5 {
+  color: #ee1c47;
+  font-size: 18px;
+  text-transform: capitalize;
+}
+
+.teks-kiri h1 {
+  font-size: 50px;
+  font-weight: 560;
+}
+
+.teks-kiri p {
+  font-style: italic;
+  font-size: 15px;
+  color: #2c222c;
+}
+
+.main-btn {
+  display: inline-block;
+  color: #111;
+  font-size: 16px;
+  font-weight: 500;
+  text-transform: capitalize;
+  border: 2px solid #111;
+  margin-top: 14px;
+  padding: 12px 25px;
+  transition: all 0.42s ease;
+}
+
+.main-btn i {
+  vertical-align: middle;
+}
+
+.main-btn:hover,
+.bawah i:hover {
+  background-color: black;
+  color: white;
+}
+
+.panah-bawah {
+  position: absolute;
+  top: 85%;
+  right: 11%;
+  align-items: center;
+}
+
+.bawah i {
+  font-size: 30px;
+  border-radius: 50px;
+  border: 2px solid #2c222c;
+  color: #2c222c;
+  padding: 12px 12px;
+}
+/* end utama */
+.wanita,
+.pria,
+.bawah {
+  max-width: 1200px;
+  margin: 20px auto;
+  padding: 0 10px;
+}
+
+.tengah {
+  max-width: 1500px;
+  margin: 0 20px;
+  padding: 0 10px;
+}
+
+.container-wanita,
+.container-pria,
+.container-tengah {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 20px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.kiri img,
+.kanan img {
+  width: 700px;
+  height: 250px;
+}
+
+.wanita-kiri,
+.pria-kanan {
+  flex: 2;
+  max-width: 500px;
+  height: 100%;
+}
+
+.wanita-kiri span,
+.pria-kanan span {
+  display: block;
+  font-size: 64px;
+  text-align: center;
+  color: rgba(2, 29, 0, 0.76);
+}
+
+.wanita-kiri a img,
+.pria-kanan a img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.wanita-kanan,
+.pria-kiri {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+  flex: 3;
+  width: 100%;
+}
+
+.card {
+  height: auto;
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card a img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+  border-bottom: 1px solid #eaeaea;
+}
+
+.card span {
+  display: block;
+  margin-top: 12px;
+  font-size: 1rem;
+  color: #333;
+}
+
+.card .diskon {
+  text-decoration: line-through;
+  color: #bbb;
+  margin-top: 8px;
+}
+
+.card .diskon,
+.card .diskon2 {
+  font-size: 1.2rem;
+}
+
+.card .diskon2 {
+  font-weight: bold;
+  color: #e63946;
+  margin-top: 5px;
+}
+
+.card a img:hover {
+  transform: scale(1.05);
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+/* bawah */
+.container-bawah {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 100vh;
+}
+
+.container-bawah img {
+  width: 60%;
+}
+
+.container-bawah .tulisan .a {
+  margin: 40px;
+  color: rgba(21, 22, 21, 0.651);
+  font-size: 20px;
+}
+
+.container-bawah .tulisan .a:hover {
+  text-decoration: underline;
+}
+
+.up {
+  display: inline-block;
+  margin-top: 40px;
+  font-size: 50px;
+  color: rgba(0, 0, 0, 0.76);
+}
+
+.shop #shop {
+  display: inline-block;
+  color: white;
+  font-size: 16px;
+  font-weight: 500;
+  text-transform: capitalize;
+  background-color: rgba(13, 14, 13, 0.76);
+  margin-top: 14px;
+  padding: 20px 33px;
+  transition: all 0.42s ease;
+}
+
+.shop #shop:hover {
+  background-color: white;
+  color: rgba(13, 14, 13, 0.76);
+  border: 2px solid rgba(13, 14, 13, 0.76);
+}
+
+/* footer */
+.footer {
+  background-color: #f5f5f5b7;
+  color: rgba(0, 0, 0, 0.76);
+  padding: 40px 40px;
+  font-family: Arial, sans-serif;
+}
+
+.footer-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #444;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+}
+
+.footer-links {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-links li {
+  font-size: 14px;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.footer-links li:hover {
+  text-decoration: underline;
+}
+
+.footer-icons a {
+  color: #000000;
+  margin-left: 10px;
+  font-size: 18px;
+  transition: color 0.3s;
+}
+
+.footer-icons a:hover {
+  color: rgba(2, 29, 0, 0.76);
+}
+
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 14px;
+}
+
+.footer-bottom p {
+  margin: 0;
+}
+
+.footer-bottom a {
+  color: #000000;
+  text-wrap: bold;
+  text-decoration: none;
+}
+
+.footer-bottom a:hover {
+  text-decoration: underline;
+}
+
+.footer-logo {
+  width: 200px;
+  height: auto;
+}
